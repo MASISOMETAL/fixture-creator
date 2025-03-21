@@ -1,0 +1,131 @@
+.container {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.addTeamForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.addButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.addButton:hover {
+  background-color: #2563eb;
+}
+
+.addButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.teamList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.teamItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: #f8fafc;
+  border-radius: 0.375rem;
+}
+
+.teamName {
+  font-weight: 500;
+}
+
+.teamActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editForm {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.editButtons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.editButton,
+.saveButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.editButton:hover,
+.saveButton:hover {
+  background-color: #2563eb;
+}
+
+.deleteButton,
+.cancelButton {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.deleteButton:hover,
+.cancelButton:hover {
+  background-color: #dc2626;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #64748b;
+  padding: 1rem 0;
+}
+

@@ -1,0 +1,38 @@
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tabButton {
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  border-radius: 0.25rem 0.25rem 0 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabButton:hover {
+  background-color: #f1f5f9;
+}
+
+.activeTab {
+  border-bottom: 2px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.tabContent {
+  padding: 1rem 0;
+}
+

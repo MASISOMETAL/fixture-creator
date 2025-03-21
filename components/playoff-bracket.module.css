@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.bracketContainer {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  gap: 2rem;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.roundTitle {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.matchesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  gap: 1rem;
+}
+
+.matchItem {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.team {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.team:hover {
+  background-color: #f1f5f9;
+}
+
+.winnerTeam {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.byeTeam {
+  background-color: #f1f5f9;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.versus {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.champion {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.championTitle {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.championName {
+  display: inline-block;
+  background-color: #3b82f6;
+  font-size: 1.3rem;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
