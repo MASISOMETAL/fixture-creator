@@ -19,6 +19,8 @@ export default function TeamManager({ teams, setTeams }: TeamManagerProps) {
   const handleAddTeam = () => {
     if (!newTeamName.trim()) return
 
+    if (teams.some(item => item.name.toLowerCase() === newTeamName.toLowerCase())) return
+
     const newTeam: Team = {
       id: Date.now().toString(),
       name: newTeamName.trim(),
