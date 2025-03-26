@@ -101,51 +101,51 @@ export default function TournamentFixture({ teams }: TournamentFixtureProps) {
         const homeTeam = newStandings[homeTeamIndex]
         const awayTeam = newStandings[awayTeamIndex]
 
-        homeTeam.played -= 1 / 2
-        awayTeam.played -= 1 / 2
+        homeTeam.played -= 1
+        awayTeam.played -= 1
 
-        homeTeam.goalsFor -= match.homeScore / 2
-        homeTeam.goalsAgainst -= match.awayScore / 2
-        awayTeam.goalsFor -= match.awayScore / 2
-        awayTeam.goalsAgainst -= match.homeScore / 2
+        homeTeam.goalsFor -= match.homeScore
+        homeTeam.goalsAgainst -= match.awayScore
+        awayTeam.goalsFor -= match.awayScore
+        awayTeam.goalsAgainst -= match.homeScore
 
         if (match.homeScore > match.awayScore) {
-          homeTeam.won -= 1 / 2
-          awayTeam.lost -= 1 / 2
-          homeTeam.points -= 3 / 2
+          homeTeam.won -= 1
+          awayTeam.lost -= 1
+          homeTeam.points -= 3
         } else if (match.homeScore < match.awayScore) {
-          homeTeam.lost -= 1 / 2
-          awayTeam.won -= 1 / 2
-          awayTeam.points -= 3 / 2
+          homeTeam.lost -= 1
+          awayTeam.won -= 1
+          awayTeam.points -= 3
         } else {
-          homeTeam.drawn -= 1 / 2
-          awayTeam.drawn -= 1 / 2
-          homeTeam.points -= 1 / 2
-          awayTeam.points -= 1 / 2
+          homeTeam.drawn -= 1
+          awayTeam.drawn -= 1
+          homeTeam.points -= 1
+          awayTeam.points -= 1
         }
       }
 
-      newStandings[homeTeamIndex].played += 1 / 2
-      newStandings[awayTeamIndex].played += 1 / 2
+      newStandings[homeTeamIndex].played += 1
+      newStandings[awayTeamIndex].played += 1
 
-      newStandings[homeTeamIndex].goalsFor += homeScore / 2
-      newStandings[homeTeamIndex].goalsAgainst += awayScore / 2
-      newStandings[awayTeamIndex].goalsFor += awayScore / 2
-      newStandings[awayTeamIndex].goalsAgainst += homeScore / 2
+      newStandings[homeTeamIndex].goalsFor += homeScore
+      newStandings[homeTeamIndex].goalsAgainst += awayScore
+      newStandings[awayTeamIndex].goalsFor += awayScore
+      newStandings[awayTeamIndex].goalsAgainst += homeScore
 
       if (homeScore > awayScore) {
-        newStandings[homeTeamIndex].won += 1 / 2
-        newStandings[awayTeamIndex].lost += 1 / 2
-        newStandings[homeTeamIndex].points += 3 / 2
+        newStandings[homeTeamIndex].won += 1
+        newStandings[awayTeamIndex].lost += 1
+        newStandings[homeTeamIndex].points += 3
       } else if (homeScore < awayScore) {
-        newStandings[homeTeamIndex].lost += 1 / 2
-        newStandings[awayTeamIndex].won += 1 / 2
-        newStandings[awayTeamIndex].points += 3 / 2
+        newStandings[homeTeamIndex].lost += 1
+        newStandings[awayTeamIndex].won += 1
+        newStandings[awayTeamIndex].points += 3
       } else {
-        newStandings[homeTeamIndex].drawn += 1 / 2
-        newStandings[awayTeamIndex].drawn += 1 / 2
-        newStandings[homeTeamIndex].points += 1 / 2
-        newStandings[awayTeamIndex].points += 1 / 2
+        newStandings[homeTeamIndex].drawn += 1
+        newStandings[awayTeamIndex].drawn += 1
+        newStandings[homeTeamIndex].points += 1
+        newStandings[awayTeamIndex].points += 1
       }
 
       return newStandings.sort((a, b) => {
